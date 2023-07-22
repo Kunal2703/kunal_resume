@@ -1,0 +1,242 @@
+\documentclass[a4paper]{article}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{textcomp}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \usepackage[hidelinks]{hyperref}
+    \usepackage[left=0.8cm, right=0.5cm, top=1.0cm]{geometry}
+    \usepackage{longtable}
+    \textheight=11in
+    \pagestyle{empty}
+    \raggedright
+
+    %\renewcommand{\encodingdefault}{cg}
+%\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+    \begin{document}
+    \vspace*{-40pt}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Profile
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \vspace*{-2pt}
+  \begin{center}
+    {\Huge \scshape {Kunal}}\\
+    \vspace*{2pt}
+    
+    \vspace*{2pt}
+    \href{mailto:kunalsingh2703@gmail.com}{kunalsingh2703@gmail.com} | \href{tel:+91 8235324567}{+91 8235324567}\\
+    \vspace*{2pt}
+    \small{\textbf{\href{https://github.com/Kunal2703}{GitHub}} | \textbf{\href{https://www.linkedin.com/in/kunal27}{LinkedIn}}}\\
+  \end{center}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %
+    %     Education
+    %
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \vspace{-6mm}
+      \header{Education}
+      \vspace{0mm}
+      \textbf{University of Petroleum and Energy Studies (UPES)}\hfill Dehradun, India\\
+Bachelor of Technology in Computer Science and Engineering \hfill July 2020 - June 2024\\
+{\small Major in Cloud Computing and Virtualization Technology (CCVT)}\\
+{\small Minor in Artificial Intelligence and Machine Learning (AI/ML) \hfill CGPA: 8.47}\\
+\vspace{2mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %
+    %     Experience
+    %
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \vspace{-2mm}
+      \header{Experience}
+      \vspace{-0.5mm}
+
+\textbf{Visvesvaraya National Institute of Technology (VNIT Nagpur)}\textbf{ | Summer Intern} \hfill Nagpur | June 2023 - July 2023\\
+          \vspace{-2.5mm}
+\begin{itemize} \itemsep -3pt
+\item  Implemented a smart irrigation system using Machine Learning, optimizing plant watering decisions with sensor data.
+\item  Achieved significant improvements in water usage efficiency and agricultural practices through automation.
+\end{itemize}
+
+
+\vspace{-2mm}
+      \textbf{F13 Technologies}\textbf{ | Summer Intern} \hfill  July 2022 - Oct 2022\\
+          \vspace{-3mm}
+\begin{itemize} \itemsep -5pt
+\item  Conducted a case study on McDonald\textquotesingle{}s home delivery service, focusing on their usage of AWS technologies such as EC2, ECR, Elasticache, RDS, S3 and ELB to optimize their operations and improve customer satisfaction.
+\end{itemize}
+
+
+\vspace{-2mm}
+      \textbf{LetsGrowMore}\textbf{ | Summer Intern} \hfill  June 2022 - July 2022\\
+          \vspace{-3mm}
+\begin{itemize} \itemsep -5pt
+\item  Developed a tool to convert images from RGB to grayscale and create pencil sketches, using the cv2 library in Python.
+\item  Developed a tool to extract text from articles and perform text analysis, using Python and Excel.
+\end{itemize}
+
+
+\vspace{-2mm}
+      \textbf{Ethical Edufabrica Pvt. Ltd}\textbf{ | Trainee} \hfill  Sept 2021 - Sep 2021\\
+          \vspace{-3mm}
+\begin{itemize} \itemsep -3pt
+\item  Developed a user-friendly banking management system with secure login/signup interfaces, a dashboard for personal details, and transaction processing capabilities.
+\item  Implemented the back-end logic using Python and SQL to manage user accounts and perform transactions.
+\end{itemize}
+
+\vspace{-2mm}
+      \textbf{Paridhi - NGO}\textbf{ | Social Intern} \hfill Bhagalpur, India | June 2021 - July 2021\\
+          \vspace{-3mm}
+\begin{itemize} \itemsep -3pt
+\item Designing and conducting surveys, analyzing data using statistical tools, and presenting clear and concise findings with actionable recommendations.
+\item  Collecting community data on education, demographics, income, health, and access to services.
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Skills
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{-3mm}
+  \header{Skills}
+  \begin{longtable}{p{5cm}p{12cm}}
+  Programming Languages: & Python, C++, C \\
+  Cloud Platform: & AWS, Google Cloud Platform, Microsoft Azure \\
+  Tools/ Technology/ Platforms: & Git, Docker, YOLO, Linux, Windows, macOS, centOS, Jenkins Visual Studio \\
+  Databases: & MYSQL, MYSQL Workbench, Oracle \\
+  Familiar with: & HTML, CSS
+  \end{longtable}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %
+    %     Projects
+    %
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \vspace{-3mm}
+      \header{Projects / Open-Source}
+      \vspace{1mm}
+      {\textbf{Cloud Provider Advisor}}\textbf{ | \href{https://github.com/Kunal2703/Cloud-Provider-Advisor}{Link}}\hfill{\sl Python, AWS, GCP, Microsoft Azure, HTML, CSS, JS, Django, API, GitHub}\\
+          \vspace{-3mm}
+\begin{itemize} \itemsep -3pt
+\item  Designed and implemented a system that utilizes APIs to retrieve virtual machine instance data from different cloud providers, stores it in a database, and presents it to users through a user-friendly interface, enabling them to search and compare virtual machines based on features like memory, storage, and price.
+\end{itemize}
+
+
+    \vspace{-2.5mm}
+      {\textbf{Parking Spot Assigner with License Plate Detector}}\textbf{ | \href{https://github.com/Kunal2703/License-plate-Detection}{Link}}\hfill{\sl Python, Yolov7, openCV, Tesseract, MySQL}\\
+          \vspace{-3mm}
+\begin{itemize} \itemsep -3pt
+\item  Designed an automated license plate recognition system using computer vision and machine learning techniques, successfully extracting license plate numbers from vehicles.
+\item  Integrated the system with an employee database to allocate parking slots based on seating locations, optimizing parking management and enhancing efficiency.
+\end{itemize}
+
+
+    \vspace{-2.5mm}
+      {\textbf{Custom Compiler}}\textbf{ | \href{https://github.com/Kunal2703/Build-our-own-Compiler}{Link}}\hfill{\sl Python, tkinter, C++}\\
+          \vspace{-3mm}
+\begin{itemize} \itemsep -3pt
+\item  Designing and implementing a comprehensive compiler in Python and C++, integrating lexical, syntax, semantic analysis, and code generation algorithms to produce executable machine code from source files.
+\end{itemize}
+
+
+    \vspace{-1.5mm}
+      {\textbf{Carbon Footprint Calculator}}\textbf{ | \href{https://github.com/Kunal2703/Carbon-Footprint-Tracker}{Link}}\hfill{\sl HTML, CSS, JS, AWS, Docker, Jenkins}\\
+          \vspace{-3mm}
+\begin{itemize} \itemsep -3pt
+\item  Developing a carbon footprint calculator web application and implementing a robust CI/CD pipeline using Jenkins, Git, AWS, and Docker for efficient and automated software development, testing, and deployment.
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      %
+      %     Certifications
+      %
+      %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \vspace{-1mm}
+      \header{Certifications}
+      \vspace{1mm}
+      • Microsoft Certified: Azure Fundamentals - \textbf{\href{https://www.credly.com/badges/b9331203-6ef9-4fd2-911d-e0930648c95c?source=linked\_in\_profile}{Microsoft}}\\
+\vspace*{1mm}
+
+     • AWS Partner: AWS Cloud Practitioner Essentials -  \textbf{\href{https://drive.google.com/file/d/1of0rvY1uMqwD-5YqXAQzMT767HK_nPUX/view}{Amazon Web Services Training and Certification}}\\
+\vspace*{1mm}
+      • AWS Partner: Accreditation (Technical) - \textbf{\href{https://www.credly.com/badges/3885872d-d920-4e07-8885-ea244bc06c49/public\_url}{Amazon Web Services Training and Certification}}\\
+\vspace*{1mm}
+      • AWS Partner: Accreditation (Business) - \textbf{\href{https://www.credly.com/badges/86cdbee2-ba67-43ba-983c-3935796429e5/public_url}{Amazon Web Services Training and Certification}}\\
+\vspace*{1mm}
+      • AWS Partner: Cloud Economics Accreditation - \textbf{\href{https://www.credly.com/badges/87c54f12-9a82-429e-8d87-8b3ecee48b13/public\_url}{Amazon Web Services Training and Certification}}\\
+\vspace*{1mm}
+      \vspace{2mm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\header{Honors \& Awards}
+      \vspace{2mm} 
+      • Received official copyright certification for the custom compiler.\\
+      • Got the opportunity to present the project Parking Spot Assigner with License Plate Detector at IBM ICE 2023.\\
+      •  Also we got the opportunity to showcase the project Parking Spot Assigner with License  Plate Detector at UPES\\ 
+        \hspace{2mm} Project Expo 2022.\\
+      • Technical Core Committee Member of Computer Society of India, UPES\\
+\vspace*{1mm}
+
+    \ 
+    \end{document}
